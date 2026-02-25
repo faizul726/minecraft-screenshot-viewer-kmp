@@ -51,6 +51,13 @@ compose.desktop {
         mainClass = "dev.faizul726.mcscreenshotviewer.MainKt"
 
         nativeDistributions {
+            // Source - https://stackoverflow.com/a/78636453
+            // Posted by Ícaro Borges
+            // Retrieved 2026-02-25, License - CC BY-SA 4.0
+            windows {
+               includeAllModules = true
+            }
+
             targetFormats(TargetFormat.Exe, TargetFormat.Rpm, TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
             packageName = "dev.faizul726.mcscreenshotviewer"
             packageVersion = "1.0.0"
